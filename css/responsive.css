@@ -1,0 +1,61 @@
+@media screen and (max-width:768px){
+  #menu_haut label{
+    display:block;
+  }
+
+  #menu_haut ul{
+    display:none;
+  }
+
+  #header{
+    height:70px;
+  }
+
+  #menu_haut li::after{
+    display:none;
+  }
+
+  #menu_haut li:hover::before{
+    content:">";
+    position:absolute;
+    top:50%;
+    left:0;
+    transform:translate(0,-50%);
+  }
+
+  #menu_haut a{
+	   padding:30px 0;
+     border-bottom:1px dotted var(--color_3);
+  }
+
+  #menu_haut a:hover{
+    padding-left:20px;
+    background:linear-gradient(to right,transparent,var(--color_3));
+    transition:0.5s all;
+  }
+
+  #menu_haut input:checked + ul{
+    display:block;
+    position:absolute;
+    top:70px;
+    left:0;
+    z-index:2;
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,0.8);
+    padding:10px 10%;
+  }
+  /***SERVICES*********************************/
+  .w33{
+    width:100%;
+  }
+  .menu_footer{
+    display:none;
+  }
+  #contact{
+    width:100%;
+  }
+  #reso{
+    justify-content:center;
+  }
+}

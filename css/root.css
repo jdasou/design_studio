@@ -1,0 +1,11 @@
+:root{
+--color_1:rgba(30,30,30,1);
+--color_2:rgba(212,63,63,1);
+--color_3:rgba(150,150,150,1);
+
+--pad_x:10%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
